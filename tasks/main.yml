@@ -76,7 +76,7 @@
     src: password.txt.j2
     dest: C:\Credentials\password.txt
 
-- name: Copy password.txt to Credentials
+- name: Create password.txt lnk
   win_shortcut:
     src: C:\Credentials\password.txt
     dest: C:\Users\Public\Desktop\password.txt.lnk
