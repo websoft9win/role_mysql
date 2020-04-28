@@ -75,3 +75,9 @@
   win_template:
     src: password.txt.j2
     dest: C:\Credentials\password.txt
+
+- name: Copy password.txt to Credentials
+  win_shortcut:
+    src: C:\Credentials\password.txt
+    dest: C:\Users\Public\Desktop\password.txt.lnk
+    icon: C:\Credentials\password.txt,0
